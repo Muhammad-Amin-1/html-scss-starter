@@ -1,0 +1,35 @@
+@mixin flex-blok {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+@mixin flex-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-blok);
+}
+
+@mixin flex-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: var(--gap-input);
+}
+
+@mixin button {
+    text-align: center;
+    padding: 20px 0;
+    border-radius: var(--border-radius);
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+
+@mixin input {
+    background-color: var(--color-bg-input);
+    border: none;
+    height: 58px;
+    width: 100%;
+    border-radius: var(--border-radius);
+}

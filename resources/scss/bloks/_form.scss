@@ -1,0 +1,67 @@
+.food {
+  padding-top: 30px;
+
+  &__inner {
+    @include flex-blok;
+  }
+
+
+  //   &::before {
+  //     content:' ';
+  //     position: absolute;
+  //     top: 0;
+  //     right: 0;
+  //     background-image: url(../Vector.png);  
+  //     width: 880px;
+  //     height: 780px;
+  // фоновые элементы
+}
+
+
+
+
+
+.form {
+  width: 930px;
+  background-color: var(--color-white);
+  border-radius: var(--border-radius);
+  padding: var(--padding-form);
+  @include flex-form;
+
+  &__body {
+    @include flex-input;
+    position: relative;
+  }
+
+  &__title {
+    text-align: center
+  }
+  
+  &__input {
+    @include input;
+  }
+  
+  // &__input::before {
+  //   content: '';
+  //   position: absolute;
+  //   bottom: 0;
+  //   right: 0;
+  //   background-image: url(../Vector.svg);   не смог
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+  //   width: 22px;
+  //   height: 20px;
+  // }
+
+
+  &__body-text {
+    text-align: right;
+  }
+
+  &__body-btn {
+    @include button;
+    cursor: pointer;
+  }
+
+
+}
